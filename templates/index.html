@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>DJANGO PROJESİ</title>
-</head>
-<body>
-<p>indexten gelen metin</p>
-{{ text }}
-</body>
-</html>
+{% extends "homebase.html" %}
+{% block header %}{% include "header.html" %}{% endblock %}
+{% block content %}{% include "content.html" %}{% endblock %}
+{% block footer %}{% include "footer.html" %}{% endblock %}
+
