@@ -18,10 +18,15 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+from home import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
+    path('hakkimizda/',views.hakkimizda, name='hakkimizda'),
+    path('iletisim/', views.iletisim, name='iletisim'),
     path('content/', include('content.urls')),
+
 ]
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ZenBlog Bootstrap Template - Index</title>
+  <title>Öğrenci Not Paylaşım</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -14,8 +14,8 @@
   <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href=" {% static 'https://fonts.googleapis.com' %}">
-  <link rel="preconnect" href="{% static 'https://fonts.gstatic.com" crossorigin' %}>
+  <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
+  <link rel="preconnect" href="{% static 'https://fonts.gstatic.com" crossorigin' %}">
   <link href="{% static 'https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap' %}" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -27,12 +27,12 @@
 
   <!-- Template Main CSS Files -->
   <link rel="stylesheet"  href="{% static 'css/variables.css' %}">
-  <link rel="stylesheet" href="{% static 'css/main.css" rel="stylesheet' %}">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 <body>
-{% block header %}{% endblock %}
+{% include 'header.html' %}
 {% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+{% include 'footer.html' %}
 
 </body>
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
