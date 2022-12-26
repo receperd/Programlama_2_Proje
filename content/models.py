@@ -41,6 +41,7 @@ class Content(models.Model):
     create_at=models.DateTimeField(auto_now_add=True)
     update_at=models.DateTimeField(auto_now=True)
 
+
     def __str__(self):
         return self.title
     def image_tag(self):
@@ -55,3 +56,4 @@ class Images(models.Model):
     image = models.ImageField(blank=True, upload_to='images/')
     def __str__(self):
         return self.title
+

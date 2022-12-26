@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
     path('hakkimizda/',views.hakkimizda, name='hakkimizda'),
+    path('category/<int:id>/<slug:slug>',views.category_blogs, name='category_blogs'),
     path('iletisim/', views.iletisim, name='iletisim'),
     path('content/', include('content.urls')),
 
